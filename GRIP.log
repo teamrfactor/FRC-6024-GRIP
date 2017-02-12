@@ -1,0 +1,44 @@
+Feb 12, 2017 2:23:03 PM edu.wpi.grip.core.util.service.LoggingListener starting
+INFO: [PipelineRunner] Starting
+Feb 12, 2017 2:25:03 PM edu.wpi.grip.core.util.service.LoggingListener terminated
+INFO: [PipelineRunner] Terminated from: STOPPING
+Feb 12, 2017 2:25:04 PM edu.wpi.grip.core.events.EventLogger eventPosted
+INFO: Event on thread 'Project Open Thread': SourceAddedEvent{source=CameraSource{name=Webcam 0}}
+Feb 12, 2017 2:25:04 PM edu.wpi.grip.core.util.service.LoggingListener starting
+INFO: [CameraSource] Starting
+Feb 12, 2017 2:25:04 PM edu.wpi.grip.core.events.EventLogger eventPosted
+INFO: Event on thread 'Project Open Thread': StepAddedEvent{step=Step{operation=CV resize}, index=OptionalInt[0]}
+Feb 12, 2017 2:25:04 PM edu.wpi.grip.core.events.EventLogger eventPosted
+INFO: Event on thread 'Project Open Thread': StepAddedEvent{step=Step{operation=RGB Threshold}, index=OptionalInt[1]}
+Feb 12, 2017 2:25:05 PM edu.wpi.grip.core.events.EventLogger eventPosted
+INFO: Event on thread 'Project Open Thread': StepAddedEvent{step=Step{operation=CV erode}, index=OptionalInt[2]}
+Feb 12, 2017 2:25:05 PM edu.wpi.grip.core.events.EventLogger eventPosted
+INFO: Event on thread 'Project Open Thread': StepAddedEvent{step=Step{operation=Mask}, index=OptionalInt[3]}
+Feb 12, 2017 2:25:05 PM edu.wpi.grip.core.events.EventLogger eventPosted
+INFO: Event on thread 'Project Open Thread': StepAddedEvent{step=Step{operation=Find Contours}, index=OptionalInt[4]}
+Feb 12, 2017 2:25:05 PM edu.wpi.grip.core.events.EventLogger eventPosted
+INFO: Event on thread 'Project Open Thread': StepAddedEvent{step=Step{operation=Filter Contours}, index=OptionalInt[5]}
+Feb 12, 2017 2:25:05 PM edu.wpi.grip.core.events.EventLogger eventPosted
+INFO: Event on thread 'Project Open Thread': ConnectionAddedEvent{connection=Connection{src=Step/CV erode/dst, dst=Step/Mask/Input}}
+Feb 12, 2017 2:25:05 PM edu.wpi.grip.core.events.EventLogger eventPosted
+INFO: Event on thread 'Project Open Thread': ConnectionAddedEvent{connection=Connection{src=Step/RGB Threshold/Output, dst=Step/CV erode/src}}
+Feb 12, 2017 2:25:05 PM edu.wpi.grip.core.events.EventLogger eventPosted
+INFO: Event on thread 'Project Open Thread': ConnectionAddedEvent{connection=Connection{src=Step/Find Contours/Contours, dst=Step/Filter Contours/Contours}}
+Feb 12, 2017 2:25:05 PM edu.wpi.grip.core.events.EventLogger eventPosted
+INFO: Event on thread 'Project Open Thread': ConnectionAddedEvent{connection=Connection{src=Step/CV resize/dst, dst=Step/RGB Threshold/Input}}
+Feb 12, 2017 2:25:05 PM edu.wpi.grip.core.events.EventLogger eventPosted
+INFO: Event on thread 'Project Open Thread': ConnectionAddedEvent{connection=Connection{src=Source/Webcam 0/Image, dst=Step/CV resize/src}}
+Feb 12, 2017 2:25:05 PM edu.wpi.grip.core.events.EventLogger eventPosted
+INFO: Event on thread 'Project Open Thread': ConnectionAddedEvent{connection=Connection{src=Step/CV erode/dst, dst=Step/Find Contours/Input}}
+Feb 12, 2017 2:25:05 PM edu.wpi.grip.core.events.EventLogger eventPosted
+INFO: Event on thread 'Project Open Thread': ConnectionAddedEvent{connection=Connection{src=Step/CV erode/dst, dst=Step/Mask/Mask}}
+Feb 12, 2017 2:25:05 PM edu.wpi.grip.core.events.EventLogger eventPosted
+INFO: Event on thread 'Project Open Thread': edu.wpi.grip.core.events.ProjectSettingsChangedEvent@5890dcdc
+Feb 12, 2017 2:25:05 PM edu.wpi.grip.core.events.EventLogger eventPosted
+INFO: Event on thread 'Project Open Thread': edu.wpi.grip.core.events.CodeGenerationSettingsChangedEvent@775cc971
+Feb 12, 2017 2:25:05 PM edu.wpi.grip.core.util.service.LoggingListener starting
+INFO: [PipelineRunner] Starting
+Feb 12, 2017 2:25:17 PM edu.wpi.grip.core.util.service.LoggingListener terminated
+INFO: [PipelineRunner] Terminated from: STOPPING
+Feb 12, 2017 2:25:19 PM edu.wpi.grip.core.util.service.LoggingListener terminated
+INFO: [CameraSource] Terminated from: STOPPING
